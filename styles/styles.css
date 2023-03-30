@@ -2,32 +2,32 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
   src: url("../fonts/ptsans-400.woff2") format(".woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
   src: url("../fonts/ptsans-700.woff2") format(".woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
-  font-display: swap;
   src: url("../fonts/ptsans-400.woff2") format(".woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 700;
-  font-display: swap;
   src: url("../fonts/ptsans-700.woff2") format(".woff2");
+  font-display: swap;
 }
 
 html {
@@ -78,12 +78,21 @@ li {
 .header-navigation-right {
   padding-right: 70px;
 }
-
+.navigetion-list-right{
+  display: flex;
+}
+.navigation-item-right{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
 .navigetion-list {
   display: flex;
+  gap:32px;
 }
 
 .navigation-link {
+  color: #000000;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
