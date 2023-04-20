@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format(".woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format(".woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: italic;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format(".woff2");
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: italic;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format(".woff2");
@@ -1237,6 +1237,7 @@ h2 {
 }
 
 .modal-conrainer-close {
+  cursor: pointer;
   padding: 0;
   justify-content: center;
   align-items: center;
@@ -1261,9 +1262,9 @@ h2 {
 
 .modal-conrainer-close:hover {
   background: #E6E6E6;
-  }
+}
 
-.modal-conrainer-close:active .modal-conrainer-button-svg{
+.modal-conrainer-close:active .modal-conrainer-button-svg {
   background: #acaaaa;
   opacity: 0.3;
   background: none;
@@ -1284,6 +1285,24 @@ h2 {
   display: flex;
   align-items: baseline;
   margin-bottom: 48px;
+}
+
+.input-error {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 157px;
+  margin-top: 52px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+}
+
+.input-info {
+  color: #000000;
 }
 
 .wrapper-data::after {
@@ -1354,12 +1373,60 @@ h2 {
 .wrapper-input-child {
   display: flex;
   position: relative;
-  justify-content: space-between;
   align-items: baseline;
   width: 242px;
 }
 
+.button-tooltip {
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #83B3D3;
+}
+
+.text-tooltip {
+  display: none;
+  width: 256px;
+  top: 52px;
+  right: 48px;
+  position: absolute;
+  background: #333333;
+  padding: 15px 18px 18px 20px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.button-tooltip:hover + .text-tooltip {
+  display: block;
+
+}
+
+.text-tooltip::after {
+  position: absolute;
+  content: "";
+  background-image: url(/pictures/logo/icon_decor.svg);
+  width: 19px;
+  height: 9px;
+  top: -9px;
+  left: 0;
+  margin-left: 123.5px;
+
+}
+
 .quantity-input {
+  margin-left: 46px;
   position: relative;
   box-sizing: border-box;
   width: 110px;

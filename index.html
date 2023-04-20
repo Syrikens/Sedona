@@ -238,10 +238,13 @@
               <div class="wrapper-data">
                 <label class="lable-visit" for="arrival-date"> <span>Дата заезда:</span></label>
                 <input class="input-data data-in" type="text" id="arrival-date" placeholder="27 апреля 2020">
+                <span class="input-error"> Мы не можем отправить вас в прошлое.</span>
               </div>
+
               <div class="wrapper-data">
                 <label class="lable-visit" for="departure-date"><span>Дата выезда:</span></label>
                 <input class="input-data data-out" type="text" id="departure-date" placeholder="1 сентября 2023">
+                <span class="input-error input-info"> На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
             <div class="number-of-people">
@@ -253,6 +256,12 @@
               </div>
               <div class="wrapper-input-child quantity-switch">
                 <label class="lable-visit" for="quantity-child"><span>Дети:</span></label>
+                <button class="button-tooltip"><svg class="icon-tooltip" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/></svg>
+                </button>
+                  <div class="text-tooltip">
+                  <span >Укажите количество детей, <br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                </div>
                 <button class="button-minus"></button>
                 <input class="quantity-input" id="quantity-child" type="number" placeholder="2">
                 <button class="button-plus"></button>
