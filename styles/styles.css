@@ -93,6 +93,8 @@ h2 {
 
 .logo-img {
   position: relative;
+  width: 140px;
+  height:70px;
 }
 
 .header-navigation-right {
@@ -681,33 +683,40 @@ h2 {
 }
 
 .filter-input-min {
+  cursor: pointer;
   box-sizing: border-box;
   padding: 12px 37px 12px 20px;
   appearance: textfield;
   width: 143px;
-  border: none;
+  height: 48px;
+  border: 2px solid transparent;
   border-radius: 4px 0px 0px 4px;
   background-color: #F2F2F2;
   font: inherit;
 }
 
 .filter-input-max {
+  cursor: pointer;
   box-sizing: border-box;
   padding: 12px 37px 12px 20px;
   appearance: textfield;
+  height: 48px;
   width: 143px;
   border-radius: 0px 4px 4px 0px;
-  border: none;
+  border: 2px solid transparent;
   background-color: #F2F2F2;
   font: inherit;
 }
 
 .filter-input-min:focus {
-  outline: 2px solid black;
+  border: 2px solid black;
+  outline: none;
 }
 
+
 .filter-input-max:focus {
-  outline: 2px solid black;
+  border: 2px solid black;
+  outline: none;
 }
 
 .filter-lable-min {
@@ -745,6 +754,9 @@ h2 {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
+}
+.range-button:hover{
+  cursor: pointer;
 }
 
 .range-button:active {
